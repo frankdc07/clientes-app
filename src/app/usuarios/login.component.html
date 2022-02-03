@@ -1,0 +1,16 @@
+<div class="card border-primary col-sm-6 mx-auto text-center">
+  <div class="card-header">{{titulo}}</div>
+  <div class="card-body">
+    <form method="post">
+      <div class="mb-3">
+        <input [(ngModel)]="usuario.username" type="text" class="form-control" name="username" id="username" placeholder="Nombre de usuario" required>
+      </div>
+      <div class="mb-3">
+        <input [(ngModel)]="usuario.password" type="password" class="form-control" name="password" id="password" placeholder="Contraseña" required>
+      </div>
+      <div class="mb-3 d-grid gap-2">
+        <input type="submit" class="btn btn-lg btn-primary btn-block" value="Login" (click)="login()">
+      </div>
+    </form>
+  </div>
+</div>
